@@ -1,0 +1,29 @@
+.border {
+  width: 100%; 
+  height: 0.5px; 
+  background-color: black;
+}
+
+.submit_btn {
+  width: 130px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: black;
+  border-radius: 30px;
+  align-self: center;
+  &:hover {
+    background: black !important;
+  }
+
+  &:active {
+    background: black !important;
+    border: none !important;
+  }
+  
+  &:focus {
+    background: black !important;
+    border: none !important;
+  }
+}

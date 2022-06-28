@@ -1,0 +1,136 @@
+@import '../../../styles/settings/index';
+
+.modal {
+  padding: 0px;
+  @media (min-width: 720px) {
+    padding: 20px;
+  }
+  text-align: center;
+  &__head {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__name {
+    font-family: $helvetica-regular;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    align-items: center;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    height: 90px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90px;
+    text-align: center;
+    img {
+      width: 30px;
+    }
+  }
+  &__btn {
+    align-items: center;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    height: 42px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 42px;
+    img {
+      width: 20px;
+    }
+  }
+  &__graph {
+    margin: 20px 0;
+  }
+  &__history__wrap {
+    border-bottom: 1px solid #e4e4e4;
+    margin-top: 20px;
+  }
+  &__history {
+    align-items: center;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+
+    @media (max-width: 520px) {
+      display: block;
+    }
+
+    @media (min-width: 560px) {
+      padding: 16px;
+    }
+    &__name {
+      font-size: 14px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      @media (max-width: 520px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      @media (min-width: 520px) {
+        font-size: 16px;
+      }
+      &__left {
+        display: inline-block;
+        margin-right: 10px;
+        font-family: $helvetica-regular;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 19px;
+        white-space: nowrap;
+        @media (min-width: 520px) {
+          font-size: 16px;
+        }
+      }
+      &__avatar {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+      &__right {
+        display: inline-block;
+
+        @media (max-width: 520px) {
+          word-break: break-all;
+          text-align: left;
+        }
+
+        span {
+          font-style: italic;
+        }
+      }
+      img {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        @media (min-width: 530px) {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+    &__date {
+      text-align: right;
+      @media (max-width: 520px) {
+        text-align: left;
+      }
+    }
+  }
+}

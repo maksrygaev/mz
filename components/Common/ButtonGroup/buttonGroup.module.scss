@@ -1,0 +1,51 @@
+@import '/styles/settings/index.scss';
+
+@mixin horizontal {
+  @include respond-to(xs) {
+    > * + * {
+      margin-left: $space-vert-md;
+    }
+  }
+
+  @include respond-to(xs, $type: max) {
+    > * {
+      width: 100%;
+
+      + * {
+        margin-top: $space-vert-md;
+      }
+    }
+  }
+}
+
+.horizontal {
+  @include horizontal;
+}
+
+.center {
+  @include horizontal;
+  @include respond-to(xs) {
+    @include flex($x: center);
+  }
+}
+
+.right {
+  @include horizontal;
+  @include respond-to(xs) {
+    @include flex($x: flex-end);
+  }
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+
+  > * {
+    flex: 1;
+
+    + * {
+      margin-top: $space-vert-md;
+    }
+  }
+}

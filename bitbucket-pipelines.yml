@@ -1,0 +1,86 @@
+image: node:14-alpine
+
+pipelines:
+  default:
+    - step:
+        name: Build
+        script:
+          - apk --no-cache add curl
+          - curl -o- -L -k https://yarnpkg.com/install.sh
+          - export PATH=$HOME/.yarn/bin:$PATH
+          - yarn
+          - yarn build:dev
+
+  branches:
+     master:
+       - step:
+           name: Deploy to development
+           deployment: development
+           caches:
+             - docker
+             - yarn
+             - node
+           size: 2x
+           services:
+             - docker
+           script:
+             - apk --no-cache add curl
+             - curl -o- -L -k https://yarnpkg.com/install.sh
+             - export PATH=$HOME/.yarn/bin:$PATH
+             - yarn
+             - yarn build:dev
+             - docker login --username $DO_API_KEY --password $DO_API_KEY $DO_REGISTRY_URL
+             - docker build -t $DO_REGISTRY_URL/$DO_REGISTRY_NAME:development .
+             - docker push $DO_REGISTRY_URL/$DO_REGISTRY_NAME:development
+             - echo Authorization:Bearer $DO_API_KEY > header
+             - curl -X POST https://api.digitalocean.com/v2/apps/$DO_ENVIRONMENT_DEVELOPMENT/deployments -H @header --fail
+
+     test:
+       - step:
+           name: Deploy to test
+           deployment: test
+           caches:
+             - docker
+             - yarn
+             - node
+           size: 2x
+           services:
+             - docker
+           script:
+             - apk --no-cache add curl
+             - curl -o- -L -k https://yarnpkg.com/install.sh
+             - export PATH=$HOME/.yarn/bin:$PATH
+             - yarn
+             - yarn build:test
+             - docker login --username $DO_API_KEY --password $DO_API_KEY $DO_REGISTRY_URL
+             - docker build -t $DO_REGISTRY_URL/$DO_REGISTRY_NAME:test .
+             - docker push $DO_REGISTRY_URL/$DO_REGISTRY_NAME:test
+             - echo Authorization:Bearer $DO_API_KEY > header
+             - curl -X POST https://api.digitalocean.com/v2/apps/$DO_ENVIRONMENT_TEST/deployments -H @header --fail
+
+     prod:
+       - step:
+           name: Deploy to production
+           deployment: production
+           caches:
+             - docker
+             - yarn
+             - node
+           size: 2x
+           services:
+             - docker
+           script:
+             - apk --no-cache add curl
+             - curl -o- -L -k https://yarnpkg.com/install.sh
+             - export PATH=$HOME/.yarn/bin:$PATH
+             - yarn
+             - yarn build:prod
+             - docker login --username $DO_API_KEY --password $DO_API_KEY $DO_REGISTRY_URL
+             - docker build -t $DO_REGISTRY_URL/$DO_REGISTRY_NAME:production .
+             - docker push $DO_REGISTRY_URL/$DO_REGISTRY_NAME:production
+             - echo Authorization:Bearer $DO_API_KEY > header
+             - curl -X POST https://api.digitalocean.com/v2/apps/$DO_ENVIRONMENT_PRODUCTION/deployments -H @header --fail
+
+definitions:
+  caches:
+    yarn: /usr/local/share/.cache/yarn

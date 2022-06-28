@@ -1,0 +1,22 @@
+@import '/styles/settings/index.scss';
+
+$avatar-space: 60px;
+
+.rightSocial {
+  display: flex;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  bottom: -$avatar-space;
+
+  @include position-absolute(left 50%);
+  transform: translateX(-50%); 
+
+  @media (max-width: 625px) {
+    width: 80px;
+    height: 80px;
+    bottom: -40px !important;
+  }
+}

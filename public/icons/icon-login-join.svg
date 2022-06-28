@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-login-join</title>
+    <g id="icon-login-join" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,10 C15.523,10 20,14.477 20,20 L20,20 L0,20 C0,14.477 4.478,10 10,10 Z M10,0 C12.762,0 15,2.239 15,5 C15,7.761 12.762,10 10,10 C7.239,10 5,7.761 5,5 C5,2.239 7.239,0 10,0 Z" id="Combined-Shape" fill="#000000"></path>
+    </g>
+</svg>

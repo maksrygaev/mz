@@ -1,0 +1,15 @@
+.trending {
+  margin: 40px 0;
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    height: 57px;
+    margin: 0;
+    margin-right: 20px;
+    color: black;
+  }
+  &__carousel {
+    max-width: 1400px;
+    margin: 0;
+  }
+}

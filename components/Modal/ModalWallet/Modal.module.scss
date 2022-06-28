@@ -1,0 +1,41 @@
+@import '../../../styles/settings/index';
+
+.modal {
+  padding: 48px;
+  &_txt {
+    font-family: "Helvetica";
+    font-size: 30px;
+    height: 80px;
+    line-height: 36px;
+    padding-top: 10px;
+    text-transform: uppercase;
+  }
+  &_account {
+    height: 80px;
+  }
+  &_name {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 41px;
+  }
+  &_button_margin {
+    margin-bottom: 20px;
+  }
+  &_login {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  &_with_line {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,49 @@
+.ant-table-thead {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 17px;
+  text-align: center;
+}
+.ant-table-tbody > tr > td {
+  background: white !important;
+  border: 1px solid #E4E4E4;
+  font-family: "Helvetica";
+  padding: 9px;
+  text-align: center;
+}
+.saleTable table {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.table-without-header .ant-table-thead {
+  display: none;
+}
+.saleTable .ant-table-thead .ant-table-cell {
+  background: none;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+.saleTable .ant-table-container table > thead > tr th {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.saleTable .ant-table-container table > thead > tr th:last-child {
+  border-right: none;
+}
+.saleTable .ant-table-tbody > tr > td {
+  background: none;
+  border-right: 1px solid black;
+  font-size: 16px;
+}
+.saleTable .ant-table-tbody > tr > td:last-child {
+  border-right: none;
+}
+.saleTable .ant-table-tbody > tr:last-child > td {
+  border-bottom: none;
+}
+
+.ant-collapse-header {
+  font-weight: bold;
+}

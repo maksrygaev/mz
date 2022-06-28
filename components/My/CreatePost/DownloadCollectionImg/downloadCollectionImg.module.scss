@@ -1,0 +1,25 @@
+@import '/styles/settings/index.scss';
+
+.change {
+  margin-top: $space-vert-xs;
+  margin-bottom: 15px;
+  &__img {
+    border: 1px solid #EBEBEB;
+    min-height: 100px;
+    max-width: 195px;
+    img {
+      max-width: 193px;
+    }
+  }
+}
+.red_star {
+  color: #ff4d4f;
+  font-family: SimSun, sans-serif;
+  font-style: italic;
+  margin-right: 5px;
+}
+.collectionButton {
+  @media (max-width: 448px) {
+    display: block;
+  }
+}

@@ -1,0 +1,59 @@
+@import '/styles/settings/index.scss';
+
+.ant-switch {
+  background-color: $color-white;
+  border: 1px solid $color-black;
+  height: 34px;
+  width: 68px;
+}
+.ant-switch-checked {
+  background-color: $color-white;
+  border: 1px solid $color-black;
+  height: 34px;
+}
+.ant-switch-handle::before {
+  background: $color-black;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  left: 2px;
+  top: 2px;
+  right: 2px;
+}
+
+edit-gallery-switch, .ant-switch-handle::before {
+  background: rgb(128,128,128);
+}
+
+edit-gallery-switch, .ant-switch-checked .ant-switch-handle::before {
+  background: $color-black;
+}
+
+.ant-switch-checked .ant-switch-handle::before {
+  left: unset;
+}
+.ant-popover .ant-switch {
+  border: none;
+  height: 13px;
+  min-width: 28px;
+  width: 28px;
+}
+.ant-popover .ant-switch-checked {
+  border: none;
+  height: 13px;
+  width: 28px;
+}
+.ant-popover .ant-switch-handle {
+  top: -1px;
+}
+.ant-popover .ant-switch-handle::before {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  left: 2px;
+  top: 2px;
+  right: 2px;
+}
+.ant-popover .ant-switch-checked .ant-switch-handle {
+  left: calc(100% - 16px);
+}

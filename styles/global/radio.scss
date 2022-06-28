@@ -1,0 +1,69 @@
+.ant-radio-wrapper {
+  font-size: 20px;
+  line-height: 24px;
+}
+.ant-radio-checked .ant-radio-inner {
+  border-color: #000000;
+}
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: #000000;
+}
+.radio-button-collection .ant-radio-button-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+}
+.radio-button-collection .ant-radio-group {
+  width: 100%;
+}
+
+.upload-product .ant-radio-wrapper span {
+  color: #000000;
+  font-family: 'Century Schoolbook';
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.upload-product .ant-radio-inner {
+  width: 20px;
+  height: 20px;
+}
+.upload-product .ant-radio-checked .ant-radio-inner:after {
+  width: 10px;
+  height: 10px;
+}
+.upload-product .ant-radio-inner::after {
+  top: 4px;
+  left: 4px;
+}
+.upload-product .ant-radio-button-wrapper-checked,
+.radio-button-collection .ant-radio-button-wrapper-checked{
+  z-index: 1;
+  color: $color-gray-card !important;
+  background: #fff;
+  border: 8px solid $color-gray-card !important;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.upload-collection .ant-radio-button-wrapper-checked,
+.radio-button-collection .ant-checkbox-wrapper-checked{
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  border: 8px solid #40a9ff !important;
+  height: 100%;
+}
+.radio-button-collection .ant-checkbox-inner {
+  display: none;
+}
+.radio-button-collection .title-card-check {
+  position: absolute;
+  top: 70%;
+}
+@media (max-width: 768px) {
+  .upload-collection .ant-checkbox-group li {
+    min-height: 430px;
+  }
+}

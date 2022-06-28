@@ -1,0 +1,15 @@
+@import '/styles/settings/index.scss';
+
+.root {
+  align-items: center;
+  border-radius: 20px;
+  border: $border;
+  color: $text-color;
+  display: inline-flex;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.buttonRemove {
+  margin-left: 5px;
+}

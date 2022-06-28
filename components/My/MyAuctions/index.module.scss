@@ -1,0 +1,16 @@
+.content {
+  position: relative;
+}
+
+.select {
+  position: absolute;
+  right: 0;
+  top: -80px;
+  width: 300px;
+
+  @media (max-width: 768px) {
+    position: relative;
+    top: -20px;
+    width: 100%;
+  }
+}

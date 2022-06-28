@@ -1,0 +1,46 @@
+//-- Mixin for Media queries
+//------------------------------------------------------
+
+@mixin respond-to($value, $secondValue: null, $type: min) {
+  $width: $value;
+
+  @if map_has_key($breakpoints, $value) {
+    $width: map-get($breakpoints, $value);
+  }
+
+  @if map_has_key($orientations, $width) {
+    $width: map-get($orientations, $width);
+
+    @media #{$width} {
+      @content;
+    }
+  } @else if($width == desktop) {
+    @media screen and ($media-min: map-get($breakpoints, md)) {
+      @content;
+    }
+  } @else if ($width == mobile) {
+    @media screen and ($media-max: map-get($breakpoints, md) - 1px) {
+      @content;
+    }
+  } @else if ($secondValue) {
+    $width-second: $secondValue;
+
+    @if map_has_key($breakpoints, $secondValue) {
+      $width-second: map-get($breakpoints, $secondValue);
+    }
+
+    @if $width-second {
+      @media screen and ($media-min: $width) and ($media-max: $width-second - 1px) {
+        @content;
+      }
+    }
+  } @else {
+    @if $type == max {
+      $width: $width - 1px;
+    }
+
+    @media screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '/styles/settings/index.scss';
+
+.content_block {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 50px;
+}
+.content_description {
+  padding-top: 28px;
+  text-align: center;
+  h2 {
+    font-family: $helvetica-regular;
+    font-size: 35px;
+    line-height: 42px;
+    margin-top: 42px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.list {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  list-style-type: none;
+}
+
+.container {
+  padding: 0 50px !important;
+}
+
+.top_text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 20px 0 20px;
+  width: 162px;
+}
+.name_description {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0 auto 55px;
+  width: 55%;
+}
+.btn {
+  margin-right: 40px;
+
+  @media (max-width: 576px) {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}

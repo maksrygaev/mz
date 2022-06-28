@@ -1,0 +1,233 @@
+.input {
+  font-size: 14px;
+  &-rounded {
+    border: none;
+    border-radius: $border-radius-large;
+    height: 50px;
+    padding-left: 24px;
+    width: 100%;
+  }
+  &-rounded-black-border {
+    border: 1px solid #000;
+    border-radius: $border-radius-large;
+    height: 50px;
+    padding-left: 24px;
+    width: 100%;
+  }
+  &-small-rounded-black-border {
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 360px;
+  }
+  &-footer {
+    border: 1px solid $color-white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 360px;
+  }
+  &-bank-card {
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+  }
+}
+.ant-form-item-label > label {
+  font-style: italic;
+  text-transform: uppercase;
+}
+.input-footer.ant-input-affix-wrapper,
+.input-footer.ant-input-affix-wrapper > input.ant-input {
+  background: $color-black;
+  color: $color-white;
+}
+.input-footer.ant-input-affix-wrapper .ant-input-suffix {
+  color: $color-white;
+}
+.input-footer.ant-input-affix-wrapper svg {
+  height: 20px;
+  width: 20px;
+}
+.container.wallet-address .input-small-rounded-black-border {
+  width: 90%
+}
+/*
+ * This thing causes all inputs and textarea border disappearing
+ * And this is not right behaviour
+ * .ant-input:hover  {
+ * border-color: white !important;
+ * box-shadow: none !important;
+ * }
+ */
+.upload-product .ant-upload.ant-upload-drag {
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+.upload-product label {
+  font-family: "Century Schoolbook";
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.upload-product input {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: "Helvetica";
+  font-size: 14px;
+  height: 50px;
+  width: 100%;
+}
+.upload-product .search-input input.ant-input {
+  border: none !important;
+  height: 40px;
+}
+.upload-product .input-white input {
+  border: none;
+  height: 40px;
+}
+.upload-product .input-white input:hover {
+  border: none !important;
+  box-shadow: none !important;
+}
+.upload-product .ant-input:hover  {
+  border: 1px solid #000000 !important;
+  box-shadow: none !important;
+}
+.upload-product textarea {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: "Helvetica";
+  font-size: 14px;
+  width: 100%;
+}
+.upload-product .ant-input-number {
+  width: 100%;
+}
+.upload-product .ant-picker {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  input {
+    height: 40px;
+  }
+}
+.upload-product .ant-picker-suffix {
+  margin-bottom: 0;
+  span {
+    margin-bottom: 0;
+  }
+}
+.offers-form.upload-product .ant-input-number-handler-wrap {
+  display: none;
+}
+.offers-form.upload-product .ant-input-number {
+  border: none;
+}
+
+.upload-product .ant-picker-input input {
+  border: none;
+}
+
+.socialBlock {
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+.socialBlock button#openModal {
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.socialBlock button#openModal span {
+  font-size: medium;
+  color: white;
+  font-style: italic;
+}
+
+.socialList div {
+  display: flex;
+  //background-color: rgb(57, 4, 247);
+  justify-content: space-between;
+}
+
+.socialList div#name  {
+  justify-content: flex-start;
+  //background-color: rgb(251, 255, 7);
+  align-items: center;
+  width: 100px;
+}
+
+.socialList div#name span#icon  {
+  //background-color: rgb(15, 226, 103);
+  font-size: medium;
+  margin-bottom: 5px;
+}
+
+.socialList div#name span#text  {
+  //background-color: red;
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-input-number-input-wrap {
+  width: 100%;
+}
+
+.socialList div#url a {
+  //background-color: gray;
+  display: flex;
+  align-items: center;
+  width: 260px;
+  // margin-top: 7px;
+  // margin-bottom: 7px;
+}
+
+.ant-input-affix-wrapper::before {
+  width: initial !important;
+}
+
+.ant-input-number-handler-wrap {
+  display: none !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input-number, input::-webkit-outer-spin-button,
+.input-number, input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+/* Firefox */
+.input-number, input[type="number"] {
+  -moz-appearance:textfield !important;
+}
+
+.ant-form-item-has-error .ant-input, .ant-form-item-has-error .ant-input-affix-wrapper, .ant-form-item-has-error .ant-input:hover, .ant-form-item-has-error .ant-input-affix-wrapper:hover {
+  border-color: blue !important;
+}
+
+.ant-form-item-has-error .ant-input, .ant-form-item-has-error .ant-input-affix-wrapper, .ant-form-item-has-error .ant-input-affix-wrapper:hover, .ant-form-item-has-error .ant-input:hover {
+  border-color: blue !important;
+}
+
+.ant-form-item-has-error .ant-input:focus, .ant-form-item-has-error .ant-input-affix-wrapper:focus, .ant-form-item-has-error .ant-input-focused, .ant-form-item-has-error .ant-input-affix-wrapper-focused {
+  box-shadow: none !important;
+}
+
+.ant-form-item-has-error .ant-input-number, .ant-form-item-has-error .ant-picker {
+  border-color: blue !important;
+}

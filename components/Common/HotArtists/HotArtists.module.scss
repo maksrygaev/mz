@@ -1,0 +1,39 @@
+.artists{
+  &__card {
+    display: inline-block;
+    width: 16.6%;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+  }
+  &__head{
+    margin: 15px 0;
+    h2 {
+      font-family: "Helvetica";
+      font-size: 35px;
+      letter-spacing: 0;
+      line-height: 42px;
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+  }
+  &__load {
+    text-align: center;
+    margin: 30px 0 50px;
+  }
+}
+@media (max-width: 1140px) and  (min-width: 821px) {
+  .artists__card  {
+    width: 25%;
+  }
+}
+@media (max-width: 820px) and  (min-width: 561px) {
+  .artists__card  {
+    width: 50%;
+  }
+}
+@media (max-width: 560px) {
+  .artists__card  {
+    width: 100%;
+  }
+}

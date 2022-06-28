@@ -1,0 +1,155 @@
+.title {
+  font-family: "Helvetica";
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+.download__block {
+  text-align: left;
+}
+.download__img {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+.download__info {
+  display: inline-block;
+}
+.download__title {
+  color: #000000;
+  font-family: Schoolbook;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 22px;
+  margin-right: 52px;
+  margin-top: 38px;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+.download__recommended {
+  color: #8C8C8C;
+  font-family: "Helvetica";
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 10px;
+  width: 150px;
+}
+.download__description {
+  display: inline-block;
+  float: right;
+  height: 65px;
+  width: 210px;
+  border-radius: 20px;
+  background-color: #E4E4E4;
+  margin-top: 38px;
+  padding: 13px;
+  vertical-align: top;
+  &__top {
+    align-items: top;
+    display: flex;
+    justify-content: space-between;
+    &__left {
+      color: #8C8C8C;
+      font-family: "Helvetica";
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 7px;
+      margin-top: 3px;
+    }
+    &__right {
+      border-radius: 10px;
+      height: 20px;
+      width: 20px;
+      min-width: 20px;
+      background-color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+  &__format {
+    color: #000000;
+    font-family: "Helvetica";
+    font-size: 9px;
+    height: 29px;
+    line-height: 11px;
+    width: 150px;
+  }
+}
+.label_input {
+  color: #000000;
+  font-family: "Century Schoolbook";
+  font-size: 14px;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sale__container {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.button__container {
+  margin-bottom: 30px;
+}
+.title__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  h2 {
+    font-family: "Helvetica";
+    font-size: 35px;
+    line-height: 42px;
+    text-transform: uppercase;
+  }
+}
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 25px;
+  margin-bottom: 20px;
+  span {
+    margin-left: 20px;
+  }
+}
+.avatar {
+  display: flex;
+  margin-top: 5px;
+  p {
+    font-size: 16px;
+    margin: 0;
+    margin-left: 10px;
+    white-space: nowrap;
+    font-family: "Helvetica";
+  }
+}
+
+.input:hover {
+  border: 1px solid black !important;
+}
+
+.upload_form_message_error {
+  font-family: "Helvetica";
+  font-size: 16px;
+  color: red;
+}
+.chek_drop {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 25px;
+}
+.centered {
+  text-align: center;
+}

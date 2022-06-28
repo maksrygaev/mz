@@ -1,0 +1,152 @@
+.ant-select-selector {
+  align-items: center;
+  border: 1px solid $color-black !important;
+  border-radius: 5px !important;
+  color: $color-black;
+  display: flex;
+  font-size: 14px;
+  height: 50px !important;
+  line-height: 24px;
+  margin: 0 !important;
+  padding: 10px 15px 10px 25px !important;
+  vertical-align: middle;
+}
+.ant-select-selection-placeholder {
+  color: $color-black !important;
+  font-size: 14px !important;
+  font-family: $helvetica-regular;
+}
+.ant-select {
+  position: relative;
+}
+.ant-select-arrow {
+  color: $color-black;
+  position: absolute;
+  right: 36px;
+  top: 12px;
+}
+
+.anticon.anticon-down.ant-select-suffix {
+  border: none;
+  color: $color-black;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 8px;
+  padding: 10px;
+}
+.ant-select-item-option-content {
+  display: flex;
+}
+.ant-select-selection-item .circle-sm {
+  display: none;
+}
+span.ant-select-selection-item::after {
+  display: none !important;
+}
+.ant-select-selector::after {
+  display: none !important;
+}
+.ant-select-selection-search {
+  margin-top: 10px;
+}
+
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector {
+  border-color: $color-black !important;
+  box-shadow: none !important;
+}
+.upload-product .ant-select {
+  font-family: 'Helvetica';
+  font-size: 14px;
+}
+
+.trending__select,
+section.arrow-top-shift .ant-carousel .slick-prev {
+  @media (max-width: 992px) {
+    top: -19% !important;
+    right: 15% !important;
+  }
+}
+
+.trending__select,
+section.arrow-top-shift .ant-carousel .slick-next {
+  @media (max-width: 992px) {
+    top: -19% !important;
+    right: 3% !important;
+  }
+}
+
+.artist__select,
+section.arrow-top-shift .ant-carousel .slick-prev {
+  @media (max-width: 768px) {
+    top: -19% !important;
+    right: 15% !important;
+  }
+}
+
+.artist__select,
+section.arrow-top-shift .ant-carousel .slick-next {
+  @media (max-width: 768px) {
+    top: -19% !important;
+    right: 3% !important;
+  }
+}
+
+.artist__select ant-select {
+  width: 320px;
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.trending__select,
+.ant-select {
+  width: 325px;
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+  }
+}
+
+.explore-select {
+  width: 320px;
+  @media (max-width: 768px) {
+    padding-left: 0px !important;
+    width: 100%;
+  }
+}
+
+.ant-form-item-has-error .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector {
+  border-color: blue !important;
+}
+
+.ant-form-item-has-error
+  .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input).ant-select-open
+  .ant-select-selector,
+.ant-form-item-has-error
+  .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input).ant-select-focused
+  .ant-select-selector {
+  border-color: blue !important;
+}
+.ant-form-item {
+  @media (max-width: 770px) {
+    margin-bottom: 10px !important;
+  }
+}
+@media (max-width: 690px) {
+  .search-block .ant-select {
+    margin-top: -13px !important;
+  }
+  .search-block .ant-select-selector {
+    height: 30px !important;
+  }
+  .search-block .ant-select-arrow {
+    top: 3px;
+  }
+}

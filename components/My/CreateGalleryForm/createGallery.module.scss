@@ -1,0 +1,162 @@
+@import '/styles/settings/index.scss';
+.title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: $helvetica-regular;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.socialNetworkTitle {
+  padding-top: 6px !important;
+  font-size: $font-size-base;
+  font-family: $helvetica-regular;
+  color: $color-black;
+}
+
+.input {
+  margin-top: 2px;
+  width: 100%;
+  max-width: 650px;
+  height: 50px;
+  border-radius: 5px;
+  border-color: $color-black;
+  &::placeholder {
+    color: $color-black;
+    font-size: $font-size-base;
+    font-family: $helvetica-regular;
+  }
+  &:hover {
+    border-color: $color-black !important;
+  }
+  @media (max-width: 1440px) {
+    max-width: 100%;
+  }
+}
+
+.changeBtn {
+  margin-bottom: 7px;
+  width: 160px;
+  height: 34px;
+  border: 1px solid $color-black;
+  border-radius: 17px;
+  text-transform: uppercase;
+  font-family: $schoolbook-regular;
+  font-size: $font-size-base;
+  font-style: italic;
+  color: $color-black;
+}
+
+.description {
+  font-family: $helvetica-regular;
+  color: #8c8c8c;
+  font-size: $font-size-small;
+  line-height: 14px;
+}
+
+.divider {
+  margin-top: 0;
+  margin-bottom: 6px;
+  height: 1px;
+  background-color: $color-black;
+}
+
+.content {
+  width: 100%;
+  max-width: 650px;
+
+  @media (max-width: 1380px) {
+    max-width: 450px;
+  }
+  @media (max-width: 966px) {
+    max-width: 100%;
+  }
+}
+
+.createGalleryForm {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 966px) {
+    display: block;
+  }
+}
+
+.createGalleryForm label {
+  font-family: $schoolbook-regular;
+  font-size: $font-size-base;
+  color: $color-black;
+}
+
+.setTiming {
+  font-family: $schoolbook-regular;
+  font-size: $font-size-large;
+  color: $color-black;
+}
+
+.uploadImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.submitBtn {
+  background-color: $color-black;
+  width: 116px;
+  height: 34px;
+  border-radius: 16px;
+  color: white;
+  font-family: $schoolbook-regular;
+  font-size: $font-size-base;
+  text-transform: uppercase;
+}
+.cancelBtn {
+  background-color: $color-white;
+  color: $color-black;
+  width: 116px;
+  height: 34px;
+  border-radius: 16px;
+  font-family: $schoolbook-regular;
+  font-size: $font-size-base;
+  text-transform: uppercase;
+  margin-right: 12px;
+}
+
+.approve {
+  margin-left: 12px;
+  padding: 0 12px;
+  width: fit-content;
+}
+
+.fee_input {
+  padding-top: 5px;
+}
+
+.wrapperAvatar {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 10px;
+  }
+  @media (min-width: 768px) {
+    flex-direction: column;
+    img {
+      margin-bottom: 10px;
+    }
+  }
+}
+.buttons {
+  @media (max-width: 576px) {
+    display: block;
+  }
+}
+.buttonApproval {
+  margin-top: 25px;
+  margin-right: 20px;
+  text-align: center;
+  @media (max-width: 576px) {
+    margin-right: 0;
+  }
+}

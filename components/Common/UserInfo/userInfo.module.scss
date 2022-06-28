@@ -1,0 +1,41 @@
+@import '/styles/settings/index.scss';
+
+.horizontal {
+  @include flex($y: center);
+
+  > * + * {
+    margin-left: $space-horz-xs;
+  }
+}
+
+.vertical {
+  text-align: center;
+
+  > * {
+    &:first-child {
+      margin: 0 auto $space-vert-xs;
+    }
+  }
+}
+
+.userContent {
+  > span {
+    display: block;
+
+    + span {
+      margin-top: $space-vert-xxs;
+    }
+  }
+}
+
+.userName {
+  font-size: $font-size-larger;
+}
+
+.userLikes {
+  font-size: $font-size-small;
+
+  svg {
+    margin-right: $space-horz-xxs;
+  }
+}

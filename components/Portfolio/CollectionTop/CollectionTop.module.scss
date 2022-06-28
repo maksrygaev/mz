@@ -1,0 +1,124 @@
+@import '/styles/settings/index.scss';
+.portfoliotop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 -50px;
+  background: #8c8c8c;
+  img {
+    width: 100%;
+    max-height: 345px;
+  }
+  &__avatar {
+    text-align: center;
+    img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+  }
+  &__title {
+    color: $color-black;
+    font-family: $helvetica-regular;
+    font-size: 35px;
+    line-height: 42px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    @media (max-width: 768px) {
+      font-size: 22px;
+      margin: 0;
+    }
+  }
+  &__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+      font-family: $helvetica-regular;
+      font-size: 25px;
+      line-height: 30px;
+      margin: 0 35px;
+      text-align: center;
+      span {
+        display: block;
+        font-family: $body-text-family;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    margin: -30px auto 0;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      margin-top: 0;
+    }
+  }
+  &__social__left {
+    display: flex;
+    margin: 0;
+  }
+  &__social__right {
+    display: flex;
+    margin: 0;
+  }
+  &__btn {
+    align-items: center;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    height: 42px;
+    justify-content: center;
+    margin: 0 10px;
+    width: 42px;
+    img {
+      width: 20px;
+    }
+  }
+  &__intro {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 20px auto 30px;
+    max-width: 750px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin: 12px auto 15px;
+    }
+  }
+  &__creator__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px 0 0 0;
+    @media (min-width: 768px) {
+      margin: 20px 0 40px;
+    }
+  }
+  &__creator__by {
+    font-size: 20px;
+    font-style: italic;
+    margin-right: 12px;
+  }
+  &__creator {
+    text-align: center;
+    font-family: $helvetica-regular;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+}

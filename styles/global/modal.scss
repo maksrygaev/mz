@@ -1,0 +1,261 @@
+.ant-modal-content {
+  max-width: 850px;
+  box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+  // border-radius: 20px;
+}
+
+.ant-modal-header {
+  // border-radius: 20px;
+  border-bottom: none !important;
+  text-align: center;
+}
+
+.ant-form-inline {
+  display: flex;
+  flex-wrap: wrap;
+  // align-items: baseline;
+  // justify-content: space-around;
+}
+
+.myForm {
+  flex-direction: column;
+}
+
+.myForm div {
+  margin: 1px;
+  display: flex;
+  //background-color: rgb(57, 4, 247);
+  justify-content: space-between;
+}
+
+.myForm div div#name {
+  justify-content: flex-start;
+  //background-color: rgb(251, 255, 7);
+  width: 110px;
+}
+
+.myForm div#name span {
+  //background-color: red;
+  margin-left: 10px;
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+}
+
+.myForm div span#icon {
+  //background-color: rgb(15, 226, 103);
+  font-size: medium;
+}
+
+.myForm div input {
+  width: 250px;
+  //background-color: pink;
+  margin-right: 67px;
+}
+
+.myForm div a {
+  //background-color: gray;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.myForm button#delete {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 25px;
+  height: 25px;
+}
+
+.myForm div button.ant-btn.ant-btn-circle {
+  background-color: pink;
+}
+
+.myForm div button.ant-btn.ant-btn-circle span {
+  background-color: yellow;
+}
+
+.myForm button span {
+  font-size: medium;
+  color: white;
+  font-style: italic;
+}
+
+.myForm div button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ant-modal-body .editProfile_socialList__1Mbft div {
+  width: 400px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ant-modal-footer {
+  display: none;
+  border-top: none !important;
+}
+
+.ant-modal-title {
+  // font-weight: bold;
+  // font-size: 32px;
+  // color: #23262f;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.modal-block__info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.modal__img {
+  height: 48px;
+  width: 48px;
+  margin-right: 15px;
+}
+
+.upload {
+  background: url('/icons/modal/upload.svg') no-repeat;
+}
+
+.done {
+  background: url('/icons/modal/done.svg') no-repeat;
+}
+
+.step2 {
+  background: url('/icons/modal/signsell.svg') no-repeat;
+}
+
+.modal__title {
+  margin-bottom: 0;
+}
+
+.modal__descr {
+  font-size: 12px;
+  color: #777e91;
+}
+
+.modal-btn {
+  width: 384px;
+  height: 48px;
+  border-radius: 90px;
+}
+
+.modal__step {
+  margin-bottom: 32px;
+}
+.ant-modal-close-icon svg {
+  height: 22px;
+  width: 22px;
+  color: $color_black;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.ant-popover-arrow {
+  display: none;
+}
+.ant-popover-content {
+  margin-top: -15px;
+}
+
+.myFormGallery {
+  flex-direction: column;
+  margin-left: 20px;
+  // background-color: blue;
+}
+
+.myFormGallery div {
+  margin: 1px;
+  display: flex;
+  //background-color: rgb(57, 4, 247);
+  justify-content: space-between;
+}
+
+.myFormGallery div div#name {
+  justify-content: flex-start;
+  //background-color: rgb(251, 255, 7);
+  width: 110px;
+}
+
+.myFormGallery div#name span {
+  //background-color: red;
+  margin-left: 10px;
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+}
+
+.myFormGallery div span#icon {
+  //background-color: rgb(15, 226, 103);
+  font-size: medium;
+}
+
+.myFormGallery div input {
+  width: 250px;
+  //background-color: pink;
+  margin-right: 67px;
+}
+
+.myFormGallery div a {
+  //background-color: gray;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.myFormGallery button#submit {
+  width: 60px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.myFormGallery button#delete {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 25px;
+  height: 25px;
+}
+
+.myFormGallery div button.ant-btn.ant-btn-circle {
+  background-color: pink;
+}
+
+.myFormGallery div button.ant-btn.ant-btn-circle span {
+  background-color: yellow;
+}
+
+.myFormGallery button span {
+  font-size: medium;
+  color: white;
+  font-style: italic;
+}
+
+.myFormGallery div button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 690px) {
+  .ant-modal {
+    max-width: calc(100vw - 60px);
+  }
+}

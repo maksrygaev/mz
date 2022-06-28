@@ -1,0 +1,17 @@
+@import '/styles/settings/index.scss';
+
+.root {
+  background: none;
+  border: $border;
+  cursor: pointer;
+  font-size: $font-size-large;
+  min-height: 200px;
+  min-width: 200px;
+  padding: 0;
+  @include flex($y: center, $x: center);
+  @include size(100%);
+
+  > span {
+    margin-right: 10px;
+  }
+}

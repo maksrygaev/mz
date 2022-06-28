@@ -1,0 +1,107 @@
+@import '/styles/settings/index.scss';
+
+.footer {
+  background: $color-black;
+  color: $color-white;
+  margin-top: 40px;
+  padding: 45px;
+
+  &_menu_title {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Helvetica';
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  &_menu {
+    margin-left: 0;
+    padding-left: 0;
+    &_notautorised {
+      font-weight: bold;
+      cursor: pointer;
+      &_italic {
+        font-style: italic;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+  &_menu li {
+    color: $color-white;
+    font-size: 20px;
+    list-style-type: none;
+    margin-bottom: -7px;
+    text-transform: uppercase;
+  }
+  &_menu a {
+    color: $color-white;
+    font-weight: bold;
+  }
+  &_italic {
+    font-style: italic;
+  }
+  &_copy {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 54px;
+    a {
+      color: $color-white;
+      margin-right: 75px;
+      text-decoration: underline;
+    }
+  }
+  &_plusButton {
+    background: $color-purple;
+    border: none;
+    color: $color-white;
+    height: 40px;
+    margin-right: -8px;
+    width: 40px;
+  }
+  &_plusButton span {
+    font-size: 24px;
+  }
+  &_plusButton svg {
+    margin-top: 2px;
+  }
+  &_subscribe {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 30px;
+  }
+  &_social {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px auto 0;
+    text-align: center;
+    width: 252px;
+  }
+  &_btn {
+    align-items: center;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+    img {
+      width: 20px;
+    }
+  }
+  &_content {
+    border-top: 1px solid $color-white;
+    margin-top: 40px;
+    padding-top: 50px;
+  }
+  &_right {
+    text-align: right;
+  }
+  @media (max-width: 575px) {
+    &_menu_title_response {
+      margin-top: 30px;
+    }
+  }
+}

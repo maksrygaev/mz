@@ -1,0 +1,28 @@
+.block {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.btn {
+  width: 157px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+}

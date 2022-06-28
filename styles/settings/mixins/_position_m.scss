@@ -1,0 +1,45 @@
+//-- Mixin for Positions
+//------------------------------------------------------
+
+@mixin position($position, $args: ()) {
+  $coordinates: top right bottom left;
+  $valueArray: auto initial inherit;
+
+  position: $position;
+
+  @each $value in $coordinates {
+    $index: index($args, $value);
+
+    @if $index {
+      @if ($index and $index + 1 <= length($args)) and
+        (type-of(nth($args, $index + 1)) == number or index($valueArray, nth($args, $index + 1)))
+      {
+        #{$value}: nth($args, $index + 1);
+      } @else {
+        #{$value}: 0;
+      }
+    }
+  }
+}
+
+@mixin position-absolute($args) {
+  @include position(absolute, $args);
+}
+
+@mixin position-fixed($args) {
+  @include position(fixed, $args);
+}
+
+@mixin position-relative($args) {
+  @include position(relative, $args);
+}
+
+@mixin position-absolute-center() {
+  transform: translate(-50%, -50%);
+  @include position-absolute(left 50% top 50%);
+}
+
+@mixin top-absolute-full-block() {
+  @include size(100%);
+  @include position-absolute(left top);
+}

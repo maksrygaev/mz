@@ -1,0 +1,21 @@
+@import '/styles/settings/index.scss';
+
+.root {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  text-align: center;
+
+  > * + * {
+    margin-top: $space-vert-md;
+  }
+}
+
+.title {
+  font-size: $font-size-huge;
+}
+
+.description {
+  font-size: $font-size-larger;
+  margin-bottom: 30px;
+}

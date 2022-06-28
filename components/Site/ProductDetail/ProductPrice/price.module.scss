@@ -1,0 +1,31 @@
+@import '/styles/settings/index';
+
+.price {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  &__amount {
+    height: 42px;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 35px;
+    line-height: 42px;
+    margin: 0;
+    padding: 0;
+  }
+  &__description {
+    height: 22px;
+    color: #000000;
+    font-family: 'Century Schoolbook';
+    font-size: 18px;
+    font-style: italic;
+    line-height: 22px;
+  }
+  span {
+    height: 22px;
+    color: #000000;
+    font-family: 'Century Schoolbook';
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+}

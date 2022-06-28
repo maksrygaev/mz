@@ -1,0 +1,29 @@
+@import '/styles/settings/index.scss';
+
+.root {
+  border-radius: 50%;
+  border: $border;
+  overflow: hidden;
+
+  > img {
+    @extend %image-styles;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+.medium {
+  @include size(50px);
+}
+
+.small {
+  @include size(30px);
+}
+
+.large {
+  @include size(100px);
+}
+
+.change {
+  margin-top: 10px;
+}

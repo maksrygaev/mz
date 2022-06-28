@@ -1,0 +1,50 @@
+.explore{
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 0 30px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    margin: 0 -10px;
+  }
+  &__card{
+    display: inline-block;
+    width: calc(25% - 20px);
+    vertical-align: top;
+    margin: 10px 10px 20px 10px;
+  }
+  &__button{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.menu {
+  width: 100%;
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 576px) {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      width: 13%;
+    }
+    li:nth-child(1) {
+      width: 26%;
+    }
+    li:nth-child(3), li:nth-child(4) {
+      width: 24%;
+    }
+    li button {
+      padding-left: min(10px);
+      padding-right: min(10px);
+      width: 100%;
+    }
+  }
+}

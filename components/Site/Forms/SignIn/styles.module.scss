@@ -1,0 +1,35 @@
+.block {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+
+.button {
+  width: 157px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 566px) {
+    width: 110px;
+    font-size: 14px;
+  }
+}
+
+.signUpBtn {
+  @media (max-width: 420px) {
+    padding: 0 20px;
+  }
+}

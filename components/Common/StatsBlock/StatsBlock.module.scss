@@ -1,0 +1,49 @@
+@import '/styles/settings/index.scss';
+
+.stats {
+  h2 {
+    font-family: "Helvetica";
+    font-size: 35px;
+    line-height: 42px;
+    text-transform: uppercase;
+  }
+  &__price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__author {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 21px;
+    position: relative;
+    &__name {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+    }
+    &__avatar {
+      img {
+        border-radius: 50%;
+        height: 35px;
+        margin-right: 8px;
+        width: 35px;
+      }
+    }
+    &__num {
+      border: 1px solid black;
+      border-radius: 50%;
+      position: absolute;
+      left: -49px;
+      height: 35px;
+      width: 35px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__load {
+    padding: 40px 0 0;
+    text-align: center;
+  }
+}

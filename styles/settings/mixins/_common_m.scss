@@ -1,0 +1,104 @@
+//-- Mixin for Common styles
+//------------------------------------------------------
+@use 'sass:math' as *;
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin last-child() {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin text-overflow($text-width) {
+  max-width: $text-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin scroll($size: 4px) {
+  &::-webkit-scrollbar {
+    @include size($size);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #aaaaaa;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-gray;
+  }
+}
+
+@mixin background($bgSize: cover, $bgPosition: 0 0) {
+  background: {
+    position: $bgPosition;
+    repeat: no-repeat;
+    size: $bgSize;
+  }
+}
+
+//------------------Mixin for hover, focus, disabled styles
+
+@mixin hover-styles() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin disabled() {
+  &.disabled,
+  &[disabled] {
+    @content;
+  }
+}
+
+//------------------Mixin for sizes
+
+@mixin size($size) {
+  $height: nth($size, 1);
+  $width: $height;
+
+  @if length($size) > 1 {
+    $width: nth($size, 2);
+  }
+
+  height: $height;
+  width: $width;
+}
+
+//------------------Mixin for images
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &:before {
+    content: ' ';
+    display: block;
+    padding-top: (div($height, $width) * 100%);
+    //padding-top: ($height / $width) * 100%;
+  }
+
+  > img,
+  > div:first-child {
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}

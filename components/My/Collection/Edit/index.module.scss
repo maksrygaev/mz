@@ -1,0 +1,29 @@
+@import '/styles/settings/index.scss';
+.title {
+  font-family: $helvetica-regular;
+  font-size: 35px;
+  color: $color-black;
+  text-transform: uppercase;
+}
+.avatar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  &__img {
+    margin-right: 20px;
+  }
+  &__size {
+    font-family: $helvetica-regular;
+    color: #8C8C8C;
+    font-size: 12px;
+    width: 150px;
+    margin-left: 1px;
+    margin-top: 5px;
+    line-height: 14px;
+  }
+}
+.chek_drop {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 25px;
+}

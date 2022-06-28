@@ -1,0 +1,50 @@
+@import '/styles/settings/index.scss';
+
+.bg {
+  height: 240px;
+  margin: 0 -50px;
+
+  @media (max-width: 576px) {
+    margin: 0 -20px
+  }
+
+  &:before {
+    padding-top: 17%;
+  }
+}
+
+.leftContent {
+  position: absolute;
+
+  @include respond-to(desktop) {
+    bottom: $space-vert-md;
+    left: $space-horz-lg;
+  }
+
+  @include respond-to(mobile) {
+    left: $space-horz-md;
+    bottom: $space-vert-md;
+    width: calc(100% - (20px * 2));
+  }
+}
+
+.rightContent {
+  color: white;
+
+  > * + * {
+    margin-left: $space-horz-lg;
+  }
+
+  @include respond-to(desktop) {
+    @include position-absolute(bottom $space-vert-md right $space-horz-lg);
+  }
+
+  @include respond-to(mobile) {
+    transform: translateX(-50%);
+    @include position-absolute(bottom $space-vert-md left 50%);
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}

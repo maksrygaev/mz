@@ -1,0 +1,28 @@
+@import '/styles/settings/index.scss';
+.middleblock{
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px;
+  text-align: center;
+  &__title {
+    color: $color-white;
+    font-family: "Century Schoolbook";
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: 576px) {
+      font-size: 30px;
+    }
+    span {
+      font-style: normal;
+      display: block;
+    }
+  }
+}

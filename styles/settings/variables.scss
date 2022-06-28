@@ -1,0 +1,89 @@
+///-- Variables
+////------------------------------------------------------
+
+$bg-color: #f5f5f5;
+$color-gray-card: #E4E4E4;
+
+$color-gray-violet: #EAECF3;
+$color-purple: #6149FF;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-orange: #f89017;
+$color-dark-gray: #777e90;
+$color-gray: #e2e2e2;
+$color-red: #ef466f;
+$color-green: #45b26b;
+$color-blue: #3772ff;
+$color-gray-blue: #94b2fa;
+$color-dark: #353945;
+$text-color: #212121;
+
+
+$border-color: #d8d8d8;
+
+$border-radius-small: 5px;
+$border-radius-base: 10px;
+$border-radius-large: 25px;
+$border-radius-huge: 30px;
+
+$border-width: 1px;
+$border: $border-width solid $border-color;
+
+$font-size-huge: 46px;
+$font-size-large: 20px;
+$font-size-larger: 18px;
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-xs: 10px;
+$font-size-xxs: 8px;
+
+$body-text-family: 'Schoolbook-Italic', 'Century Schoolbook', 'Times New Roman', serif;
+
+$schoolbook-regular: 'Schoolbook-Italic', 'Century Schoolbook', 'Times New Roman', serif;
+$schoolbook-bold: 'Schoolbook-Bold', 'Times New Roman', serif;
+$schoolbook-italic: 'Schoolbook', 'Times New Roman', serif;
+$schoolbook-bold-italic: 'Schoolbook-Bold-Italic', 'Times New Roman', serif;
+
+$helvetica-regular: 'Helvetica', sans-serif;
+$helvetica-bold: 'Helvetica-Bold', sans-serif;
+
+// Spaces
+
+$space-vert-xxs: 5px;
+$space-vert-xs: 10px;
+$space-vert-sm: 15px;
+$space-vert-md: 20px;
+$space-vert-lg: 30px;
+$space-vert-xl: 40px;
+$space-vert-xxl: 60px;
+
+$space-horz-xxs: 5px;
+$space-horz-xs: 10px;
+$space-horz-sm: 15px;
+$space-horz-md: 20px;
+$space-horz-lg: 30px;
+
+
+
+//-- Media Variables
+//------------------------------------------------------
+
+$media-min: min-width;
+$media-max: max-width;
+
+$breakpoints: (
+  xs: 414px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+$orientations: (
+  portrait: '(orientation: portrait) and (max-width: calc(#{map-get($breakpoints, small)} - 1px))',
+  landscape: '(orientation: landscape) and (max-width: calc(#{map-get($breakpoints, small)} - 1px))',
+  landscapeTablet:
+    '(orientation: landscape) and (min-width: #{map-get($breakpoints, small)}) and (max-width: calc(#{map-get($breakpoints, medium)} - 1px))',
+  print: 'print',
+);

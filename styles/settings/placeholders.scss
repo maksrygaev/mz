@@ -1,0 +1,25 @@
+///-- Placeholdres
+////------------------------------------------------------
+
+%transition {
+  transition: all 0.2s linear;
+}
+
+%last-child {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+%image-styles {
+  height: auto;
+  max-width: 100%;
+}
+
+%gradient-blue {
+  background: linear-gradient(45deg, #241654 0%, #3232a1 100%);
+}
+
+%gradient-gray {
+  background: linear-gradient(180deg, #f6f6f6 0%, #eaeaea 100%);
+}

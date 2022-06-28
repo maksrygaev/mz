@@ -1,0 +1,199 @@
+@import '/styles/settings/index';
+.gallery {
+  &__title {
+    font-family: $helvetica-regular;
+    font-size: 35px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  &__subhead {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    @media (max-width: 656px) {
+      margin: 10px;
+    }
+  }
+  &__buttons__artist {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  height: 48px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  box-sizing: content-box;
+  border: 1px solid #000 !important;
+  display: flex;
+  align-items: center;
+  &_share {
+    background: $color-black;
+    color: $color-white;
+    width: 130px;
+  }
+
+  &_percent {
+    width: 100px;
+  }
+}
+
+.addInput {
+  margin-bottom: 40px;
+  font-size: 25px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #000 !important;
+  width: 100%;
+}
+
+.block {
+  width: 100%;
+  height: 125px;
+  padding: 16px 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid $color-black;
+
+  &_title {
+    font-family: $schoolbook-italic;
+    font-size: $font-size-base;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+}
+
+.submit {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 34px;
+  background: $color-black;
+  border-radius: 17px;
+  color: $color-white;
+}
+
+.later {
+  font-size: $font-size-large;
+  font-family: $schoolbook-italic;
+  font-style: italic;
+}
+
+.gallery__card {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e4e4e4;
+
+  @media (max-width: 576px) {
+    display: block;
+    padding: 12px 0;
+  }
+
+  &__img {
+    border-right: 1px solid #e4e4e4;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 21px;
+    padding: 10px;
+
+    @media (max-width: 576px) {
+      margin-right: 6px;
+    }
+
+    img {
+      width: 90px;
+    }
+  }
+  &__info {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__block {
+    margin-left: 15px;
+  }
+  &__name {
+    font-family: $helvetica-regular;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    text-align: left;
+  }
+  &__footer {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 19px;
+    text-align: left;
+  }
+  &__footer__left {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    font-style: normal;
+  }
+  &__avatar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    img {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+    }
+  }
+  &__footer__right {
+    display: inline-block;
+    font-style: italic;
+    font-size: 16px;
+  }
+}
+
+.list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.link {
+  color: #000;
+}
+
+.btnMargin {
+  @media (min-width: 650px) {
+    margin-right: 25px;
+  }
+
+  @media (max-width: 656px) {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+.mobileBtns {
+  //display: none;
+  @media (max-width: 656px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.sectionTitle {
+  margin-top: 30px;
+
+  @media (max-width: 656px) {
+    margin-top: 10px;
+  }
+}

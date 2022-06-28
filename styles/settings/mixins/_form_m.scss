@@ -1,0 +1,9 @@
+//-- Mixin for Forms
+//------------------------------------------------------
+
+@mixin placeholder {
+  &.placeholder,
+  &::placeholder {
+    @content;
+  }
+}

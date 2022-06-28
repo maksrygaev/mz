@@ -1,0 +1,59 @@
+@import '../../../styles/settings/index';
+
+.modal {
+  padding: 50px;
+  &__name {
+    font-family: "Helvetica";
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 55px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    margin-bottom: 19px;
+    &__pic {
+      display: inline-block;
+      vertical-align: middle;
+      width: 90px;
+      margin-right: 22px;
+      &__circle {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background: black;
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+      }
+      &__circle_white {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+      }
+    }
+    &__text {
+      display: inline-block;
+      vertical-align: middle;
+      width: calc(100% - 112px);
+      &__name {
+        font-family: "Helvetica";
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 9px;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 16px;
+        font-style: italic;
+        line-height: 20px;
+      }
+    }
+  }
+}

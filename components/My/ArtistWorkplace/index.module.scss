@@ -1,0 +1,82 @@
+@import '/styles/settings/index.scss';
+
+.button_wrapper {
+  margin-bottom: 48px;
+}
+
+.btn {
+  width: 230px;
+  height: 34px;
+  border: 1px solid $color-black;
+  border-radius: 17px;
+  font-family: $schoolbook-regular;
+  font-size: $font-size-base;
+  text-transform: uppercase;
+
+  &_black {
+    background: $color-black;
+    color: $color-white;
+  }
+
+  @media (max-width: 768px) {
+    width: 200px;
+    font-size: 12px;
+  }
+}
+
+.list {
+  padding-left: 0;
+  list-style-type: none;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e4e4e4;
+    height: 100px;
+    padding-right: 20px;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+  }
+}
+
+.preview {
+  padding: 10px;
+  border-right: 1px solid #e4e4e4;
+}
+
+.left__block {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  padding-left: 12px;
+}
+
+.link {
+  color: #000;
+}
+
+.itemTitle {
+  @media (max-width: 656px) {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.proposalBtn {
+  @media (max-width: 656px) {
+    position: relative;
+    right: -10px;
+    padding: 0 3px;
+  }
+}
+
+.title {
+  font-family: $schoolbook-bold;
+  font-size: 20px;
+  text-align: center;
+}

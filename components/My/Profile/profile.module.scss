@@ -1,0 +1,20 @@
+@import '/styles/settings/index.scss';
+
+.profileBackgroundBackground {
+  margin-bottom: 100px;
+}
+
+.container {
+  @media (max-width: 576px) {
+    padding: 0 50px !important;
+  }
+}
+
+.social {
+  margin: -$space-vert-xs;
+  text-align: center;
+
+  > * {
+    padding: $space-vert-xs;
+  }
+}

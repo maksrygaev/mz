@@ -1,0 +1,1 @@
+export const toLocalString = (date: any) => new Date(date).toLocaleDateString("en-US");

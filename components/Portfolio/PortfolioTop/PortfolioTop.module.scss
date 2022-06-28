@@ -1,0 +1,133 @@
+@import '/styles/settings/index.scss';
+.portfoliotop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 -50px;
+  img {
+    width: 100%;
+  }
+  &__avatar {
+    bottom: -50px;
+    position: absolute;
+    img {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
+  }
+  &__title {
+    color: $color-black;
+    font-family: 'Helvetica';
+    font-size: 35px;
+    line-height: 42px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__biography {
+    text-align: center;
+  }
+  &__button {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  &__data {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &__item {
+      font-family: 'Helvetica';
+      font-size: 25px;
+      line-height: 30px;
+      margin: 0 35px;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 22px;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 18px;
+        margin: 0 10px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 20px;
+        margin: 0 15px;
+      }
+      span {
+        display: block;
+        font-family: $body-text-family;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    margin: -70px auto 0;
+
+    @media (max-width: 576px) {
+      margin-top: -45px;
+    }
+  }
+  &__social__left {
+    display: flex;
+    margin: 0;
+  }
+  &__social__right {
+    display: flex;
+    margin: 0;
+  }
+  &__btn {
+    align-items: center;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    height: 42px;
+    justify-content: center;
+    margin: 0 10px;
+    width: 42px;
+    img {
+      width: 20px;
+    }
+  }
+  &__intro {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 20px auto 30px;
+    max-width: 750px;
+    text-align: center;
+  }
+}
+
+.list {
+  width: 350px;
+  position: absolute;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+.wallet {
+  text-align: center;
+  margin: 0 auto 25px;
+  &__info {
+    margin-right: 20px;
+    @media (max-width: 576px) {
+      display: block;
+      margin-right: 0;
+    }
+  }
+}
+

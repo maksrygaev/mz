@@ -1,0 +1,41 @@
+@import '/styles/settings/index.scss';
+
+.socialItem {
+  align-items: center;
+  color: $text-color;
+  display: inline-flex;
+  font-size: $font-size-larger;
+
+  > * + * {
+    margin-left: $space-horz-xxs;
+  }
+}
+.socialItemBtn {
+  display: inline-flex;
+  padding: 0 !important;
+}
+.social__btn {
+  align-items: center;
+  border: 1px solid $color-black;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 22px;
+  height: 42px;
+  justify-content: center;
+  margin: 0 10px;
+  width: 42px;
+  img {
+    width: 20px;
+  }
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid $color-black;
+}

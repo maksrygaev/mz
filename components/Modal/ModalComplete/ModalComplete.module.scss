@@ -1,0 +1,46 @@
+@import '../../../styles/settings/index';
+
+.modal {
+  padding: 50px;
+  text-align: center;
+  &__name {
+    font-family: "Helvetica";
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 55px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    align-items: center;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    height: 90px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90px;
+    text-align: center;
+    img {
+      width: 30px;
+    }
+  }
+  &__btn {
+    align-items: center;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    height: 42px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 42px;
+    text-align: center;
+    img {
+      width: 20px;
+    }
+  }
+}

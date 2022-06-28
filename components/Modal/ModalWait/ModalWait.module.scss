@@ -1,0 +1,17 @@
+@import '../../../styles/settings/index';
+
+.modal {
+  padding: 50px;
+  text-align: center;
+  &__name {
+    font-family: "Helvetica";
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 55px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+}

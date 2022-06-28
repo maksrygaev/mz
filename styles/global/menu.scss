@@ -1,0 +1,86 @@
+.menu {
+  &__item {
+    border: solid 1px black;
+    border-radius: 0;
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    padding: 0 19px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -1px;
+    @media (max-width: 768px) {
+      padding: 0 12px;
+      font-size: 12px;
+    }
+    @media (max-width: 576px) {
+      height: 40px;
+      padding: 0 3px;
+      font-size: 10px;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+    &:hover {
+      color: black;
+      border: solid 1px black;
+    }
+  }
+  &__item-active {
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 14px;
+    outline: none !important;
+    border: 1px solid black;
+    padding: 0 19px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+      padding: 0 12px;
+      font-size: 12px;
+    }
+    @media (max-width: 576px) {
+      height: 40px;
+      padding: 0 10px;
+      font-size: 10px;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+    &:hover {
+      color: black;
+      border: solid 1px black;
+    }
+    &:focus {
+      background-color: black;
+      color: white;
+      border: solid 1px black;
+    }
+  }
+}
+.ant-menu {
+  border-bottom: none;
+}
+.ant-menu-item::after {
+  border-bottom: none !important;
+  margin: 0;
+  padding: 0;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+  padding: 0;
+}
+
+.profile_menu {
+  display: flex;
+  width: 100%;
+}

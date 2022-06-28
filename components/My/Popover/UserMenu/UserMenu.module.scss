@@ -1,0 +1,119 @@
+@import '/styles/settings/index.scss';
+
+.user {
+  &_top {
+    background: $color-black;
+    height: 70px;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &_image {
+      margin: 0 8px 0 4px;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &_eth {
+      align-items: center;
+      display: flex;
+      justify-content: flex-start;
+      padding: 12px 5px 5px 8px;
+      &_value {
+        font-size: 12px;
+        line-height: 16px;
+        span {
+          display: block;
+          font-size: 10px;
+          line-height: 14px;
+        }
+      }
+    }
+    &_switch {
+      align-items: center;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 5px 5px 14px;
+      font-size: 10px;
+      line-height: 12px;
+      &_center {
+        margin: 0 7px;
+      }
+    }
+  }
+  min-width: 122px;
+  font-size: 13px;
+  &_eth {
+    background: $color-black;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 1;
+    color: $color-white;
+    height: 40px;
+    margin-bottom: 7px;
+    align-items: center;
+    display: flex;
+    span {
+      color: #b4b7bf;
+      font-size: 10px;
+    }
+  }
+  &_div_avatar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    margin: 9px 9px 0 0;
+    img {
+      margin: 0;
+    }
+  }
+  &_user_pic {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+  &_dot {
+    background: #00d452;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    z-index: 2;
+  }
+  &_wallet {
+    padding: 7px 17px;
+    &_bottom {
+      margin-bottom: 10px;
+    }
+  }
+  &_metamask {
+    padding: 10px 17px 0;
+  }
+  ul {
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      border-bottom: 1px solid #e4e4e4;
+      list-style-type: none;
+      font-size: 14px;
+      padding: 7px 17px;
+      a {
+        color: $color-black;
+      }
+    }
+    li:last-child {
+      padding: 0;
+    }
+  }
+  &_button_link {
+    color: $color-black;
+  }
+}
+.list__item {
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+@import '/styles/settings/index.scss';
+
+.cards {
+  &__load {
+    margin-bottom: -40px;
+    margin-top: -40px;
+    text-align: center;
+  }
+}
+
+.list {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

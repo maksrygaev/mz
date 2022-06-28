@@ -1,0 +1,79 @@
+.explore{
+  &__title {
+    font-family: 'Helvetica';
+    font-size: 35px;
+    line-height: 42px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  &__navigation {
+    text-align: right;
+  }
+  &__head {
+    margin: 13px 0 30px;
+  }
+  &__menu {
+    display: inline-block;
+    vertical-align: top;
+  }
+  &__search {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+  }
+  &__button {
+    text-align: center;
+    margin-top: 33px;
+  }
+}
+.history__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #E4E4E4;
+  &__img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 21px;
+    img {
+      width: 110px;
+    }
+  }
+  &__info {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__name {
+    font-family: "Helvetica";
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  &__footer {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 19px;
+  }
+  &__footer__left {
+    display: inline-block;
+    margin-right: 10px;
+    font-style: italic;
+  }
+  &__avatar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    img {
+      width: 24px;
+      border-radius: 50%;
+    }
+  }
+  &__footer__right {
+    display: inline-block;
+    font-style: italic;
+  }
+  &__date {
+    margin-right: 20px;
+  }
+}

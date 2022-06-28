@@ -1,0 +1,10 @@
+@import '/styles/settings/index.scss';
+
+.root {
+  margin: -$space-vert-xxs;
+
+  > * {
+    display: inline-block;
+    margin: $space-vert-xxs;
+  }
+}

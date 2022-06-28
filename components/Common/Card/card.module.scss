@@ -1,0 +1,26 @@
+@import '/styles/settings/index.scss';
+
+.root {
+  border: $border;
+}
+
+a.root {
+  color: $text-color;
+  display: block;
+}
+
+.title {
+  font-size: $font-size-larger;
+}
+
+.info {
+  @include flex($y: center, $x: space-between);
+}
+
+.likes {
+  @include flex($y: center);
+
+  > span {
+    margin-left: $space-horz-xs;
+  }
+}

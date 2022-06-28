@@ -1,0 +1,1 @@
+export const hashtagsSlicer = (hashtag: string) => hashtag.replace(/[\s#]/g, "").toLowerCase();

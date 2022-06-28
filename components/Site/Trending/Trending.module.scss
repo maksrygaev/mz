@@ -1,0 +1,44 @@
+.trending {
+  margin-top: 40px;
+
+  &__card {
+    padding: 10px 10px 20px 10px;
+  }
+  &__carousel {
+    max-width: 1400px;
+    margin: 0;
+    display: flex;
+  }
+  &__title {
+    line-height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    @media (max-width: 992px) {
+      display: block;
+    }
+  }
+  &__select {
+    margin-top: -20px;
+    padding: 0 !important;
+  }
+  &__wrapper {
+    width: 100%;
+  }
+}
+
+.title {
+  @media (max-width: 992px) {
+    margin-bottom: 32px;
+  }
+}
+
+.card {
+  &__trending {
+    flex: 0 1 95% !important;
+    min-height: 520px !important;
+  }
+}

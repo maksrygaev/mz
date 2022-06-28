@@ -1,0 +1,25 @@
+@import '/styles/settings/index.scss';
+
+.tags {
+  margin-top: 30px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  &__tagsTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__tag {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding: 0 20px;
+    border: 1px solid $color-black;
+    border-radius: 17px;
+    cursor: pointer;
+    margin-top: 7px;
+    display: inline-block;
+  }
+}

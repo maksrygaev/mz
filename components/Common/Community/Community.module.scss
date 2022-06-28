@@ -1,0 +1,42 @@
+@import '/styles/settings/index.scss';
+
+.community {
+  border-bottom: 2px solid $color-black;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding-bottom: 53px;
+  &_txt {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  &_social_wrap {
+    width: 200px;
+  }
+  &_social {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_btn {
+    align-items: center;
+    border: 2px solid $color-black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 22px;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+    img {
+      width: 25px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .community {
+    display: block;
+    &_social_wrap {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import '/styles/settings/index.scss';
+.explore{
+  &__title {
+    font-family: $helvetica-regular;
+    font-size: 35px;
+    line-height: 42px;
+    margin: 0;
+    text-transform: uppercase;
+
+    @media (max-width: 1400px) {
+      margin-bottom: 24px;
+    }
+  }
+  &__head {
+    margin: 13px 0 30px;
+  }
+  &__head__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    text-align: center;
+    margin-top: 33px;
+  }
+}
+
+.error {
+  position: absolute;
+  font-size: 14px;
+  color: red;
+}
+
+.input {
+  width: 300px;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+.see_all {
+  margin-top: 0 !important;
+}

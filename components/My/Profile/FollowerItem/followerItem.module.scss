@@ -1,0 +1,9 @@
+@import '/styles/settings/index.scss';
+
+.followerItem {
+  text-align: center;
+
+  > span {
+    font-size: $font-size-large;
+  }
+}

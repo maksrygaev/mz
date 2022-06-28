@@ -1,0 +1,19 @@
+.btn {
+  width: 157px;
+  margin-right: 16px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+}
+
+.block {
+  margin-top: 15px;
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}

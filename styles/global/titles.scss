@@ -1,0 +1,43 @@
+@import '/styles/settings/index.scss';
+
+.section_title {
+  color: $color-black;
+  font-family: $helvetica-regular;
+  font-size: 35px;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 18px;
+  }
+}
+.drop-title {
+  word-wrap: break-word;
+  line-height: normal;
+  @media (max-width: 940px) {
+    max-width: 760px;
+    width: 60%;
+  }
+  @media (max-width: 576px) {
+    max-width: 380px;
+  }
+  @media (max-width: 480px) {
+    max-width: 186px;
+  }
+}
+
+.ant-form-item-explain.ant-form-item-explain-error {
+  color: blue !important;
+}
+
+.error-text, .form-message-error {
+  color: blue;
+  font-size: 14px;
+}
+
+.loading-spinner {
+  text-align: center;
+}

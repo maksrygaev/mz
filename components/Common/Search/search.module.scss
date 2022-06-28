@@ -1,0 +1,80 @@
+@import '/styles/settings/index.scss';
+
+.filterPanel {
+  background-color: $bg-color;
+  padding: $space-vert-md;
+}
+
+.filterTop {
+  margin-bottom: $space-vert-md;
+  @include flex($x: space-between, $y: center);
+
+  h4 {
+    margin-bottom: 0;
+  }
+}
+
+.filterTitle {
+  font-size: $font-size-large;
+}
+
+.selectedFacets {
+  margin-bottom: $space-vert-lg !important;
+}
+
+// Result Counter Block
+
+.resultCounter {
+  border-bottom: $border;
+  margin-bottom: $space-vert-lg;
+  padding: $space-vert-md 0;
+  @include flex($y: center, $x: space-between);
+}
+
+.counterText {
+  font-size: $font-size-large;
+}
+
+// Error Block
+
+.error {
+  font-size: $font-size-larger;
+  padding: $space-vert-sm 0;
+  text-align: center;
+
+  > * {
+    margin-bottom: $space-vert-md;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  svg {
+    font-size: 30px;
+  }
+}
+
+.errorTitle {
+  font-size: $font-size-huge;
+  margin-bottom: 10px;
+}
+
+//Search field
+
+.searchField {
+  @include respond-to(xs) {
+    max-width: calc(25% - 20px);
+    min-width: 300px;
+  }
+
+  @include respond-to(xs, $type: max) {
+    width: 100%;
+  }
+}
+
+.searchFieldSpace {
+  + * {
+    margin-top: $space-vert-lg;
+  }
+}

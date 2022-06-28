@@ -1,0 +1,29 @@
+.ant-tabs-top > .ant-tabs-nav, .ant-tabs-bottom > .ant-tabs-nav, .ant-tabs-top > div > .ant-tabs-nav, .ant-tabs-bottom > div > .ant-tabs-nav {
+  margin: 0;
+}
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+  background: white;
+  border: unset;
+  padding: 21px;
+}
+.ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-card.ant-tabs-top > div > .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 17px 17px 0 0;
+}
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab-active, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab-active {
+  border: 1px solid #E4E4E4;
+}
+.ant-tabs-tab-btn {
+  color: black;
+  font-family: "Helvetica";
+  font-size: 20px;
+  line-height: 24px;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: black;
+  text-shadow: unset;
+}
+.ant-tabs-tabpane.ant-tabs-tabpane-active {
+  border: 1px solid #E4E4E4;
+  border-radius: 0 17px 17px 17px;
+  padding: 21px;
+}
